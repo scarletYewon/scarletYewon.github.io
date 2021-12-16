@@ -1,62 +1,58 @@
 ---
 layout: post
-title:  "Sample post from Daktilo"
-subtitle: "What you can do with it!"
-date:   2014-08-19 23:56:45
-categories: [tool]
+title:  "Jekyll!"
+subtitle: "What is Jekyll?"
+date:   2021-08-19 23:56:45
+categories: [productivity]
+comments: true
 ---
 
-Just a sample post to show some of the *typography* elements supported from
-**daktilo** theme.
+## Jekyll이란?
+![jekyll](/img/jekyll.jpg)
+텍스트 변환 엔진으로, 마크업 언어로 글을 작성하면 미리 정의해 놓은 규칙에 따라서 정적인 웹사이트를 만들어준다. 이 과정에서 원하는 기능들을 구현할 수 있다.
+정적 웹사이트를 만들기 때문에, PHP 등의 서버 소프트웨어가 필요 없어, 매우 빠르고 가볍다.
+기본적인 형식
+마크다운 언어로 작성한 포스트를 github에서 commit & push한다.
 
-___
+---
 
-A blockquote:
+## Jekyll의 매커니즘
 
-> We are Hitchhikers in the road of open source knowledge.
+**파일 기반의 데이터를 정적인 리소스로 빌드해서 서비스**
+* 게시글마다 md 파일이나 html 파일을 생성한다.
 
-## Header 2
+* 글을 작성하고 배포하기 위한 빌드를 jekyll에서 진행하면 응답할 html 화면을 만들고 파일로 저장해서 준비한다.
 
-Duis lacinia commodo dui, vel aliquam metus hendrerit eu. Integer et scelerisque dui. Sed nec molestie quam. Donec sit amet nisl a massa commodo ultrices nec quis nunc. Aenean aliquet eu arcu adipiscing dignissim. Nunc dictum elit vitae dolor molestie aliquet.
+* 유저가 특정 화면을 요청하면 미리 생성한 html 파일을 찾아 꺼내준다.
 
+* DB를 조회하고 HTML 양식으로 응답하는 과정과 같다.
 
-Example code:
+**모든 화면을 미리 만든다.**
+* 유저가 요청할 수 있는 모든 화면을 미리 빌드해 두는 방식을 상용
 
-{% highlight javascript %}
-var light = new Light();
-var switchUp = new FlipUpCommand(light);
-var switchDown = new FlipDownCommand(light);
-var s = new Switch();
-
-s.storeAndExecute(switchUp);
-s.storeAndExecute(switchDown);
-{% endhighlight %}
+* 따라서 글이 많을 수록 길어지는 글 목록 화면이 많아지고 미리 만들어야하는 페이지 수도 많아진다.
 
 
-A list:
+**검색 기능**
+* 클라이언트 스크립트를 사용해서 작성된 모든 글의 제목과 내용에 키워드를 조회한다.
 
-- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
-- Donec ante est, volutpat in mi et, pulvinar congue dolor.
-- Quisque ultrices pulvinar sollicitudin.
-- Duis elementum odio eu euismod suscipit.
-- Integer enim lorem, interdum sit amet consectetur non, bibendum eget neque.
+* 최상위 경로에 검색에 필요한 정보인 search.json을 생성하고 자바스크립트를 이용해 검색한다.
 
-A numbered list:
+## 추가
+* git에서는 post의 확장자가 무조건 markdown이어야 정상적으로 html로 변환된다.
 
-1. Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc.
-2. Donec ante est, volutpat in mi et, pulvinar congue dolor.
-3. Quisque ultrices pulvinar sollicitudin.
-4. Duis elementum odio eu euismod suscipit.
-5. Integer enim lorem, interdum sit amet consectetur non, bibendum eget neque.
+  * mdwn이면 다운로드되고, md면 안나오고 markdown이어야한다.
 
-Definition list:
+---
 
-Curabitur cursus magna eu sem cursus
-: ac ultrices urna pharetra.
-: Duis scelerisque ipsum eu luctus elementum.
+## 그래서 간단하게 Jekyll이 뭔데?
+![jekyll](/img/jekyll2.jpg)
+* 텍스트 파일로 정적 웹페이지를 만들 수 있는 서비스
 
-Pellentesque habitant morbi tristique senectus
-: Curabitur malesuada lacus ac gravida porttitor
-: Duis sodales feugiat lorem et mollis.
+* ruby 기반에서 실행
 
-Want to suggest something? Please [Send me a request](https://github.com/kronik3r/daktilo/issues/new).
+* github pages에서 무료로 호스팅 가능
+
+* 보통 markdown으로 작성된 텍스트 파일을 배포
+
+<br/>**Jekyll에 대해 더 궁굼하시다면? --> [Jekyll official](http://jekyllrb.com)**
