@@ -14,7 +14,7 @@ author:
   github: scarletYewon
   # disqus: your_disqus_forum_shortname
 
-# google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-215582598-1'
 
 # Syntax highlighting
 highlightstyle: ''
@@ -31,5 +31,3 @@ comment:
   provider: "disqus"
   disqus:
     shortname: "len's"
-
-google-analytics: "UA-215582598-1"
