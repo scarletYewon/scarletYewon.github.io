@@ -60,7 +60,7 @@ comment:
 * 변환한 파일을 favicon.ico파일로 저장 후 압축해제
 * 사용할 파비콘 경로 확인 --> `assets/favicon.ico/favicon.ico `
 * `<head>`태그에 `<link rel="icon" href="/assets/favicon.ico/favicon.ico" type="image/x-icon" sizes="16x16">` 코드 추가
-  * 테마마다 <head>태그 위치가 다르기 때문에  _includes > meta_tags > base.html에 추가
+  * 테마마다 `<head>`태그 위치가 다르기 때문에  _includes > meta_tags > base.html에 추가
 
 ---
 
