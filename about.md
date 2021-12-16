@@ -1,12 +1,13 @@
 ---
 layout: page
 title: About
-subtitle: Just who the hell you think I am?
+subtitle: I am ......
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Hello<br/>
+I'm Yewon Lee.<br/>
+I'm majoring in software in Kookmin Univ.<br/>
+Here is my [github](https://github.com/scarletYewon).<br/>
+And here is my [instagram](https://www.instagram.com/whenweallfallasleepwhered0weg0/).<br/>
+Thank you >_0
