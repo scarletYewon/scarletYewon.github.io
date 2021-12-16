@@ -27,3 +27,8 @@ exclude: ["README.md", "README.html"]
 # Build settings
 highlighter: null
 markdown: kramdown
+
+comment:
+  provider: "disqus"
+  disqus:
+    shortname: "len's"
