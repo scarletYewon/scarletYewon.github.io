@@ -1,8 +1,13 @@
-I"<h2 id="google-analytics-란">Google Analytics 란?</h2>
-<p>현재 구글 마케팅 플랫폼 브랜드 내의 플랫폼으로서, 웹사이트 트래픽을 추적하고 보고하는 구글이 제공하는 웹 애널리틱스 서비스</p>
+I"b<h2 id="google-analytics-란">Google Analytics 란?</h2>
+<p><img src="/img/googleanalytics.png" alt="googleanalytics" />
+현재 구글 마케팅 플랫폼 브랜드 내의 플랫폼으로서, 웹사이트 트래픽을 추적하고 보고하는 구글이 제공하는 웹 애널리틱스 서비스</p>
 
 <h2 id="jekyll에-google-analytics-추가하기">Jekyll에 Google Analytics 추가하기</h2>
-<h4 id="2-1-google-analytics-계정-만들기">2-1. Google Analytics 계정 만들기</h4>
+
+<hr />
+
+<h2 id="1-google-analytics-계정-만들기">1. Google Analytics 계정 만들기</h2>
+
 <ul>
   <li>
     <p><a href="https://analytics.google.com/analytics/web/">Google Analytics</a>에 접속</p>
@@ -34,18 +39,20 @@
   </li>
 </ul>
 
-<h2 id="2-2-jekyll-설정-바꾸기">2-2. Jekyll 설정 바꾸기</h2>
-<ol>
-  <li>_config.yml 파일을 열어 Tracking ID 입력
-<br />`google-analytics: [tracking-id]</li>
+<h2 id="2-jekyll-설정-바꾸기">2. Jekyll 설정 바꾸기</h2>
+<ul>
+  <li>
+    <p>_config.yml 파일을 열어 Tracking ID 입력
+ <br />`google-analytics: [tracking-id]</p>
+  </li>
   <li>_includes 디렉토리 하위에 google-analytics.html 파일을 생성하고 제공받은 Tracking Code를 복사하고, Tracking Code 중에서 Tracking ID가 할당된 부분은 위에서 선언한 환경 변수로 바인딩해준다.
     <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;</span>
 <span class="nt">&lt;script </span><span class="na">async</span> <span class="na">src=</span><span class="s">"https://www.googletagmanager.com/gtag/js?id=UA-215560049-1"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script&gt;</span>
-  <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">||</span> <span class="p">[];</span>
-  <span class="kd">function</span> <span class="nx">gtag</span><span class="p">(){</span><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);}</span>
-  <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">js</span><span class="dl">'</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
-  <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">config</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">UA-215560049-1</span><span class="dl">'</span><span class="p">);</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">||</span> <span class="p">[];</span>
+<span class="kd">function</span> <span class="nx">gtag</span><span class="p">(){</span><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);}</span>
+<span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">js</span><span class="dl">'</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+<span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">config</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">UA-215560049-1</span><span class="dl">'</span><span class="p">);</span>
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div>    </div>
   </li>
@@ -54,6 +61,6 @@
       <li>모든 설정이 완료되었다면, Google Analytics 를 통해 실시간으로 활성 사용자가 변하는 것을 볼 수 있다.</li>
     </ul>
   </li>
-</ol>
+</ul>
 
 :ET

@@ -1,8 +1,9 @@
-I"�<h2 id="google-analytics-란">Google Analytics 란?</h2>
-<p>현재 구글 마케팅 플랫폼 브랜드 내의 플랫폼으로서, 웹사이트 트래픽을 추적하고 보고하는 구글이 제공하는 웹 애널리틱스 서비스</p>
+I"X<h2 id="google-analytics-란">Google Analytics 란?</h2>
+<p><img src="/img/googleanalytics.png" alt="googleanalytics" />
+현재 구글 마케팅 플랫폼 브랜드 내의 플랫폼으로서, 웹사이트 트래픽을 추적하고 보고하는 구글이 제공하는 웹 애널리틱스 서비스</p>
 
 <h2 id="jekyll에-google-analytics-추가하기">Jekyll에 Google Analytics 추가하기</h2>
-<h4 id="2-1-google-analytics-계정-만들기">2-1. Google Analytics 계정 만들기</h4>
+<h4 id="1-google-analytics-계정-만들기">1. Google Analytics 계정 만들기</h4>
 <ul>
   <li>
     <p><a href="https://analytics.google.com/analytics/web/">Google Analytics</a>에 접속</p>
@@ -34,7 +35,7 @@
   </li>
 </ul>
 
-<h2 id="2-2-jekyll-설정-바꾸기">2-2. Jekyll 설정 바꾸기</h2>
+<h2 id="2-jekyll-설정-바꾸기">2. Jekyll 설정 바꾸기</h2>
 <ul>
   <li>
     <p>_config.yml 파일을 열어 Tracking ID 입력
@@ -52,7 +53,10 @@
 </code></pre></div>    </div>
   </li>
   <li>완료
-모든 설정이 완료되었다면, Google Analytics 를 통해 실시간으로 활성 사용자가 변하는 것을 볼 수 있다.</li>
+    <ul>
+      <li>모든 설정이 완료되었다면, Google Analytics 를 통해 실시간으로 활성 사용자가 변하는 것을 볼 수 있다.</li>
+    </ul>
+  </li>
 </ul>
 
 :ET

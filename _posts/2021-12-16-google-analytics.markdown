@@ -13,7 +13,11 @@ comments: true
 현재 구글 마케팅 플랫폼 브랜드 내의 플랫폼으로서, 웹사이트 트래픽을 추적하고 보고하는 구글이 제공하는 웹 애널리틱스 서비스
 
 ## Jekyll에 Google Analytics 추가하기
-#### 2-1. Google Analytics 계정 만들기
+
+---
+
+## 1. Google Analytics 계정 만들기
+
 * [Google Analytics](https://analytics.google.com/analytics/web/)에 접속
 
     * 구글 계정이 없다면, 먼저 구글 가입부터 진행
@@ -32,7 +36,9 @@ comments: true
 7. 비즈니스 정보 입력 후 만들기
 8. 약관 동의
 
-## 2-2. Jekyll 설정 바꾸기
+---
+
+## 2. Jekyll 설정 바꾸기
 * _config.yml 파일을 열어 Tracking ID 입력
    <br/>`google-analytics: [tracking-id]
 

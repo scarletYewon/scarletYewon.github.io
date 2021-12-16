@@ -1,51 +1,56 @@
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kronik3r/daktilo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+Process
+1. repository 생성
+2. jekyll 설치
+3. 깃허브에 jekyll적용
+4. 댓글기능추가
+5. Google Analytics 적용
 
-# Daktilo
-Daktilo is a [Jekyll](jekyllrb.com) theme with a minimal design inspired from typewriters.
-
-# More info and Live preview
-[Click here](http://daktilo.github.io/) to see the theme in action.
-
-# Features
-- Fully responsive
-- [Disqus](https://disqus.com/) integration for comments.
-- Google Analytics integration.
-- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
-- Support for categories.
-- Font-Awesome Icons.
-- Optimized for SEO.
-- Coolest [404 page ever](http://kronik3r.github.io/daktilo/404.html).
-
-# How to use it
-Start by cloning the repository, then check the `_config.yml` file and change it accordingly.
-Note that the `title` property is what will be displayed as logo.
-
-Finally execute `jekyll serve --watch` and head to [localhost:4000](http://127.0.0.1:4000) to see the result.
-
-# Using categories
-Categories are little bit tricky. Please make sure to do the following for each category:
-
-- Create a file within `categories` folder with the name of your category
-For example let's say that we have a category called `An Awesome Category` you will need to add an `an-awesome-category.html` file with this content:
-
-``` html
----
-layout: category
-category: an-awesome-category
-permalink: /categories/an-awesome-category/
 ---
 
+## 1. repository 생성
+* Github에 새로운 repository를 <username>.github.io로 생성
+
+---
+
+## 2. jekyll 설치
+[Ruby설치링크](https://rubyinstaller.org/downloads/)
+* 위 링크에서 Ruby 설치
+* jekyll 설치
+* bundler 설치
+* `jekyll new .` 으로 블로그 생성
+* `jekyll serve`로 실행
+
+---
+
+## 3. 테마 적용
+[테마모음사이트](http://jekyllthemes.org/)
+* 위 링크에서 마음에 드는 테마 탐색
+* 테마 결정 후 해당 깃허브에 들어가 클론
+* 클론한 파일을 내 디렉토리에 적용
+
+---
+
+## 4. 댓글기능추가
+[disqus official](https://disqus.com)
+* 위 링크에 접속하여 회원가입
+* Create Site를 클릭하여 생성
+* Admin > installing Disqus > Universal Embed Code
+* _layouts/post.html에 Universal Embed Code 추가
+* _config.yml에 코드 추가
+```
+comment:
+    provider:"disqus"  
+    disqus:  
+      shortname: "<username>"
 ```
 
-- Create an entry inside `_data/categories.yml`
+* 댓글기능을 추가하고 싶은 게시글에
+`comment: ture` 추가
 
-``` html
-- slug: an-awesome-category
-  name: An Awesome Category
-```
+---
 
-- Then you will see it in the footer in the `Explore` section.
-
-# License
-
-The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)
+## 5. Google Analytics 적용
+* google analytics에 접속하여 계정 생성
+* jekyll 설정변경
+* 자세한 사항은 아래 링크 참고
+* [scarletyewon.github.io/google-analytics](https://scarletyewon.github.io/productivity/2021/12/10/google-analytics.html)
