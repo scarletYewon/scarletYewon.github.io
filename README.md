@@ -3,7 +3,8 @@ Process
 2. jekyll 설치
 3. 깃허브에 jekyll적용
 4. 댓글기능추가
-5. Google Analytics 적용
+5. Favicon 
+6. Google Analytics 적용
 
 ---
 
